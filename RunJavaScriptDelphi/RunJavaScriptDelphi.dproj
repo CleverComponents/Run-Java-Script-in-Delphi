@@ -58,7 +58,6 @@
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
         <SanitizedProjectName>RunJavaScriptDelphi</SanitizedProjectName>
-        <DCC_UnitSearchPath>c:\Users\Nikita\23\mORMot\SyNode;c:\Users\Nikita\23\mORMot;c:\Users\Nikita\23\mORMot\SQLite3;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <VerInfo_Locale>1049</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <DCC_Define>SM52;$(DCC_Define)</DCC_Define>
@@ -68,7 +67,6 @@
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
     </PropertyGroup>
@@ -99,29 +97,16 @@
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\..\FastMM\FastMM4.pas"/>
-        <DCCReference Include="..\..\FastMM\FastMM4Messages.pas"/>
         <DCCReference Include="Unit1.pas">
             <Form>Form1</Form>
         </DCCReference>
-        <DCCReference Include="..\..\23\mORMot\SyNode\NSPRAPI.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SpiderMonkey.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNode.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeBinding_buffer.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeBinding_const.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeBinding_fs.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeBinding_HTTPClient.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeBinding_util.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeBinding_uv.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeBinding_worker.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeReadWrite.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeSimpleProto.pas"/>
-        <DCCReference Include="..\..\23\mORMot\SyNode\SyNodeProto.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
